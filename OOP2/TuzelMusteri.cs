@@ -4,10 +4,9 @@ using System.Text;
 
 namespace OOP2
 {
-    class TuzelMusteri
+    // : Musteri dersek Miras vermiş oluruz
+    class TuzelMusteri:Musteri
     {
-        public int Id { get; set; }
-        public string MusteriNo { get; set; }
         public string SirketAdi { get; set; }
         public string VergiNo { get; set; }
 

@@ -4,7 +4,11 @@ using System.Text;
 
 namespace OOP2
 {
-    class CustomerManager
+    class MusteriManager
     {
+        public void Ekle(Musteri musteri)
+        {
+          
+        }
     }
 }
