@@ -15,7 +15,7 @@ namespace OOP3
             ILoggerService fileLogerService = new FileLoggerService();
 
             BasvuruManager basvuruManager = new BasvuruManager();
-            basvuruManager.BasvuruYap(new EsnafKredisi(),new SmsLoggerService());
+            basvuruManager.BasvuruYap(new EsnafKredisi(),new List<ILoggerService> {new SmsLoggerService(),new DatebaseLoggerService()} );
 
             List<IKrediManager> krediler = new List<IKrediManager>() {ihtiyacKrediManager,tasitKrediManger};
            // basvuruManager.KrediOnBilgilendirmesiYap(krediler);
