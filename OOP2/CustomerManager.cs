@@ -4,8 +4,7 @@ using System.Text;
 
 namespace OOP2
 {
-    class Musteri
+    class CustomerManager
     {
-
     }
 }
