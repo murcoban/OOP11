@@ -6,7 +6,12 @@ namespace OOP3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            IKrediManager ihtiyacKrediManager = new IhtiyacKrediManager();
+            IKrediManager tasitKrediManger = new TasitKrediManger();
+            IKrediManager konutKrediManager = new KonutKrediManager();
+
+            BasvuruManager basvuruManager = new BasvuruManager();
+            basvuruManager.BasvuruYap(tasitKrediManger);
         }
     }
 }

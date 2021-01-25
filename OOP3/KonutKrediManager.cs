@@ -4,8 +4,16 @@ using System.Text;
 
 namespace OOP3
 {
-    class KonutKrediManager:KrediManager
+    class KonutKrediManager : IKrediManager
     {
-    
+        public void BiseyYap()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Hesapla()
+        {
+            Console.WriteLine("Konut Kredisi Ödeme Planı Hesaplandı");
+        }
     }
 }
